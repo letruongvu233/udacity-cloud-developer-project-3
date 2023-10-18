@@ -22,7 +22,7 @@ script:
 
 after_success:
 - docker logout
-- docker login
+- docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
 - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME"
 - docker images
 - echo "Start push"
