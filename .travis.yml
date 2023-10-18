@@ -21,6 +21,8 @@ script:
 - docker tag udagram-frontend letruongvu233/udagram-frontend:v1
 
 after_success:
+- docker logout
+- docker login
 - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME"
 - docker images
 - echo "Start push"
