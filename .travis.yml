@@ -26,4 +26,4 @@ after_success:
 - docker push letruongvu233/udagram-reverseproxy:v1
 - docker push letruongvu233/udagram-api-feed:v1
 - docker push letruongvu233/udagram-api-user:v1
-- docker push letruongvu233/udagram-api-frontend:v1
+- docker push letruongvu233/udagram-frontend:v1
