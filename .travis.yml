@@ -22,6 +22,7 @@ script:
 
 after_success:
 - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME"
+- docker images
 - echo "Start push"
 - docker push letruongvu233/udagram-reverseproxy:v1
 - docker push letruongvu233/udagram-api-feed:v1
