@@ -21,7 +21,7 @@ script:
 - docker tag udagram-api-frontend letruongvu233/udagram-frontend:v1
 
 after_success:
-- echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-letruongvu233
+- echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME"
 - echo "Start push"
 - docker push letruongvu233/udagram-reverseproxy:v1
 - docker push letruongvu233/udagram-api-feed:v1
