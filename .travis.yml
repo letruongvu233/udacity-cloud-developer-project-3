@@ -18,7 +18,7 @@ script:
 - docker tag udagram-reverseproxy letruongvu233/udagram-reverseproxy:v1
 - docker tag udagram-api-feed letruongvu233/udagram-api-feed:v1
 - docker tag udagram-api-user letruongvu233/udagram-api-user:v1
-- docker tag udagram-frontend letruongvu233/udagram-frontend:v2
+- docker tag udagram-frontend letruongvu233/udagram-frontend:v3
 
 after_success:
 - docker logout
@@ -29,4 +29,4 @@ after_success:
 - docker push letruongvu233/udagram-reverseproxy:v1
 - docker push letruongvu233/udagram-api-feed:v1
 - docker push letruongvu233/udagram-api-user:v1
-- docker push letruongvu233/udagram-frontend:v2
+- docker push letruongvu233/udagram-frontend:v3
