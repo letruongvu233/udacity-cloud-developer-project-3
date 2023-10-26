@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: frontend-node
-          image: letruongvu233/udagram-frontend:v1
+          image: letruongvu233/udagram-frontend:v2
           imagePullPolicy: Always
           ports:
             - containerPort: 80
